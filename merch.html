@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Our merchandise. The most essential kitchen tools">
+  <meta name="author" content="Alan Maizon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <title>FoodieStamp | Shop</title>
+  <link rel="stylesheet" href="css/basket.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="img/logo.png" alt="Logo" class="logo"></a>
+    <h3>FoodieStamp</h3>
+    <nav>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="merch.html">Merchandise</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+        <button class="basket-button">Basket (0)</button>
+      </nav>
+
+  </header>
+<div class="main-container">
+<div class="merchandise-container">
+  <div class="merchandise-item" data-price="399.99">
+    <div class="grid-container2">
+      <img src="img/books.jpg" alt="Book" class="image">
+      <div class="middle">
+        <div><button class="add-to-basket">Add to Basket</button></div></div>
+      </div>
+    <h2>Book Set</h2>
+    <h4>₹399.99</h4>
+    <p>Complete collection<br>Summer Special Edition</p>
+  </div>
+  <div class="merchandise-item" data-price="799.99">
+    <div class="grid-container2">
+    <img src="img/kitchen.png" alt="Kitchen" class="image">
+    <div class="middle">
+      <div><button class="add-to-basket">Add to Basket</button></div></div>
+      </div>
+    <h2>Utensil Set</h2>
+    <h4>₹799.99</h4>
+    <p>Essential Kitchen tools<br>Summer Special Edition</p>
+  </div>
+  <div class="merchandise-item" data-price="999.99">
+    <div class="grid-container2">
+    <img src="img/apron.png" alt="Apron" class="image">
+    <div class="middle">
+      <div><button class="add-to-basket">Add to Basket</button></div></div>
+    </div>
+    <h2>Chef Apron</h2>
+    <h4>₹999.99</h4>
+    <p>100% Cotton<br>Pink, Grey, White</p>
+  </div>
+  <div class="merchandise-item" data-price="499.99">
+    <div class="grid-container2">
+    <img src="img/handler.png" alt="Handler" class="image">
+    <div class="middle">
+      <div><button class="add-to-basket">Add to Basket</button></div></div>
+    </div>
+    <h2>Chef Hat</h2>
+    <h4>₹499.99</h4>
+    <p>100% Cotton<br>Pink, Grey, White</p>
+  </div>
+</div>
+<div class="basket-container">
+    <div class="basket-charges">
+        <h2><i class="fa fa-shopping-cart"></i> Order Summary</h2>
+        <br>
+        <p>Subtotal: ₹<span id="item-total">0</span></p>
+        <p>Fees: ₹40</p>
+        <p>Shipping: ₹60</p>
+        <p><strong>Total: ₹<span id="total-charges">100</span></strong></p><br>
+  <div class="basket-items">
+  </div>
+  <button id="checkoutBtn" class="continue-to-payment">Continue to Payment</button>
+
+  <div id="checkoutPopup" class="popup">
+      <div class="popup-content">
+          <span class="close">&times;</span>
+          <h2>Checkout Purchase</h2><br>
+          <img src="img/cart.gif" alt="cart_gif">
+          <p>Your items have been added to the cart. Please proceed to payment.</p>
+        </div>
+  </div>
+
+</div>
+</div>
+</div>
+<footer>
+    <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+    </ul>
+  </footer>
+  <script src="js/merch.js"></script>
+</body>
+</html>

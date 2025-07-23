@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Search for recipes... The most practical recipes step by step">
+  <meta name="author" content="Kumar Kashyap">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <title>FoodieStamp | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <img src="img/logo.png" alt="Logo" class="logo">
+    <input type="text" id="searchBar" placeholder="Search for recipes..." oninput="filterRecipes()">
+    <nav>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="merch.html">Merchandise</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+        <button class="basket-button">Basket (0)</button>
+      </nav>
+  </header>
+  <div id="app">
+    <h1>FoodieStamp</h1>
+    <i>The most practical recipes step by step</i>
+    <br><br>
+    <div id="searchResultsMessage" style="display: none;">No recipes found. Please try a different search term.</div>
+    <div id="recipeGallery">
+      <div id="galleryItems" class="grid-container"></div>
+      <div id="navigation">
+        <button id="prevBtn" onclick="recipeManager.showPreviousPage()">Previous</button>
+        <button id="nextBtn" onclick="recipeManager.showNextPage()">Next</button>
+      </div>
+    </div>
+    <div id="header-top-show">
+      <div class="slide-message active">Wholly healthy food for people who care for the planet</div>
+      <div class="slide-message">Join the plant-based revolution</div>
+      <div class="slide-message">Cook for yourself and share with your friends</div>
+      <div class="slide-message">Eat well, live well</div>
+    </div>
+    <br>
+  </div>
+  <footer>
+    <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+
+    </ul>
+  </footer>
+  <form id="newsletter-form">
+    <div id="newsletter-popup" class="popup">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>Join our mailing list!</h2>
+        <p>For exclusive recipes, discounts, opportunities and new product<br>announcements - plus few surprises.</p>
+        <img src="img/healthy.gif" alt="healthy_gif">
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+          <button type="submit">Submit</button>
+      </div>
+    </div>
+  </form>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Search for recipes... The most practical recipes step by step">
+  <meta name="author" content="Alan Maizon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <title>FoodieStamp | Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="img/logo.png" alt="Logo" class="logo"></a>
+    <h3>FoodieStamp</h3>
+    <nav>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="merch.html">Merchandise</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+        <button class="basket-button">Basket (0)</button>
+      </nav>
+  </header>
+  <div class="container">
+    <div class="form-column">
+      <form id="contactForm" onsubmit="return validateContactForm()">
+        <h2><i class="fa fa-envelope"></i> Send a Message</h2>
+        <p>We will respond to you as soon as possible</p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="7" cols="50" maxlength="500" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <div class="form-column">
+      <form id="recipeForm" onsubmit="return validateRecipeForm()" enctype="multipart/form-data">
+        <h2><i class="fa fa-bookmark"></i> Submit a Recipe</h2>
+        <p>Help us to feature new recipes on the website</p>
+        <label for="recipeTitle">Title:</label>
+        <input type="text" id="recipeTitle" name="recipeTitle" required>
+        <label for="recipeImage">Image File:</label>
+        <input type="file" id="recipeImage" name="recipeImage" accept="image/*" required>
+        <label for="recipeIngredients">Ingredients (one per line):</label>
+        <textarea id="recipeIngredients" name="recipeIngredients" rows="2" cols="50" required></textarea>
+        <label for="recipeSteps">Steps (one per line):</label>
+        <textarea id="recipeSteps" name="recipeSteps" rows="2" cols="50" required></textarea>
+        <button type="submit">Submit Recipe</button>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+    </ul>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
