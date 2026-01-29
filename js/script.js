@@ -1,3 +1,4 @@
+// Script
 document.addEventListener('DOMContentLoaded', function () {
 
   //Slide messages
