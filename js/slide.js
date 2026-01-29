@@ -1,3 +1,4 @@
+// Slide
 document.addEventListener('DOMContentLoaded', function () {
   const messages = document.querySelectorAll('.slide-message');
   let currentSlide = 0;
