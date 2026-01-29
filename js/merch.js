@@ -1,4 +1,4 @@
-// Get the modal
+// Get the Modal
 var popup = document.getElementById("checkoutPopup");
 
 // Get the button that opens the modal
