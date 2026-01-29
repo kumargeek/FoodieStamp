@@ -95,7 +95,7 @@ ${selectedRecipe.steps.join('\n')}
       }
     }
   }
-
+// EventListener
   document.addEventListener('DOMContentLoaded', () => {
     const selectedRecipe = JSON.parse(localStorage.getItem('selectedRecipe'));
     if (selectedRecipe) {
